@@ -1,0 +1,104 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--light: #EEE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 40px 0;
+    color: var(--grey);
+    background-color: var(--darker);
+    text-align: center;
+    font-weight: 700;
+}
+
+#task-input {
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+#task-input #new-task-input {
+    padding: 3px;
+    font-size: 1.15rem;
+    width: 50%;
+    height: auto;
+    border-radius: 7px;
+}
+
+#task-input #new-task-submit {
+    margin-left: 10px;
+}
+
+.task-list h2 {
+    color: var(--grey);
+    margin: 1rem 0;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+#tasks .task input,button{
+    appearance: none;
+	border: none;
+	outline: none;
+	background: none; 
+}
+
+#tasks .task {
+    background-color: var(--darker);
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    padding: 5px 8px;
+}
+
+#tasks .task .text {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.edit {
+    color: var(--light);
+}
+
+.delete {
+    color: crimson;
+}
+
+@media (max-width : 800px)
+{
+  main {
+    max-width: 600px;
+    width: 100%;
+  }  
+}
+
+
+
