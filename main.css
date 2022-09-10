@@ -98,6 +98,10 @@ main {
     max-width: 600px;
     width: 100%;
   }  
+
+  .task-list {
+    margin: 0 10%;
+  }
 }
 
 
